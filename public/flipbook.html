@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipbook - Learn with Stato</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <!-- <nav class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="./koleksi">Koleksi Flipbook</a></li>
+        <li><a href="./kuis">Kuis Interaktif</a></li>
+        <li><a href="./tentang">Tentang</a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <div class="flipbook-viewer">
+    <div class="viewer-container">
+      <div id="flipbookHeader" class="flipbook-header">
+        <H3>Judul Flipbook  </H3>
+      </div>
+
+      <div class="flipbook-display">
+        <div id="flipbookContent" class="flipbook-placeholder">
+          <iframe allowfullscreen="allowfullscreen" allow="clipboard-write" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/bfc245f229.html" style="border: 1px solid lightgray; width: 100%; height: 500px;"></iframe>
+        </div>
+      </div>
+
+      <div class="flipbook-controls">
+        <button class="btn btn btn-primary btn-outline" onclick="history.back()">
+          Kembali
+        </button>
+        <a href="/koleksi" class="btn btn-primary">
+          Lihat Koleksi Lainnya
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <div class="footer-logo">
+          <img src="./media/maskot stato.png" alt="Stato" onerror="this.innerHTML='<div style=&quot;font-size: 60px;&quot;>🦉</div>'" />
+          <div>
+            <h3>Learn with Stato</h3>
+            <p class="footer-tagline">Statistika Jadi Cerita</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Halaman</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/koleksi">Koleksi Flipbook</a></li>
+          <li><a href="/kuis">Kuis Interaktif</a></li>
+          <li><a href="/tentang">Tentang</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Kontak</h3>
+        <ul>
+          <li>info@statoku.com</li>
+          <li>+62 812-3456-7890</li>
+          <li style="margin-top: 1rem;">
+            <a href="#">Instagram</a> •
+            <a href="#">YouTube</a> •
+            <a href="#">TikTok</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Learn with Stato. Konten flipbook diperbarui secara berkala setiap bulan.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+
+</body>
+</html>

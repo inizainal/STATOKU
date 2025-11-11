@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - Learn with StatoKu</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="login-header">
+        <img src="./media/maskot stato.png" class="logo-login" alt="Stato" onerror="this.innerHTML='<div style=&quot;font-size: 60px;&quot;>🦉</div>'" />
+        <h1>Admin Panel</h1>
+        <p style="color: var(--gray-medium);">Learn with StatoKu</p>
+      </div>
+
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required autocomplete="username" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required autocomplete="current-password" />
+        </div>
+
+        <button type="submit" class="login-btn" id="loginBtn">
+          Login
+        </button>
+      </form>
+
+      <!-- <div style="text-align: center; margin-top: 2rem; font-size: 0.875rem; color: var(--gray-medium);">
+        <p>Default login: <strong>admin</strong> / <strong>admin123</strong></p>
+        <p style="margin-top: 0.5rem;">atau <strong>editor</strong> / <strong>admin123</strong></p>
+        <a href="/" style="color: var(--teal-primary); margin-top: 1rem; display: inline-block;">← Kembali ke Website</a>
+      </div> -->
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Simple hardcoded authentication for demonstration
+      const validCredentials = [
+        { user: 'admin', pass: 'admin123' },
+        { user: 'editor', pass: 'admin123' }
+      ];
+
+      const isValid = validCredentials.some(cred => cred.user === username && cred.pass === password);
+
+      if (isValid) {
+        alert('Login successful!');
+        // Redirect to admin dashboard or another page
+        window.location.href = '/admin-dashboard.html'; // Change to your admin dashboard path
+      } else {
+        alert('Invalid username or password. Please try again.');
+      }
+    }
+  </script>
+</body>
+</html>
