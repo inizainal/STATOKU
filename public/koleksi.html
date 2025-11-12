@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Flipbook - Learn with StatoKu</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="" class="active">Koleksi Flipbook</a></li>
+        <li><a href="kuis.html">Kuis Interaktif</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Koleksi Flipbook Statistika</h1>
+    <p style="font-size: 1rem;">Update Setiap Bulan!</p>
+  </div>
+
+  <!-- <div class="category-filter" id="categoryFilter">
+    <button class="filter-btn active" onclick="filterByCategory('all')">Semua</button>
+  </div> -->
+
+  <div class="container-main-koleksi">
+    <div class="topbar">
+        <div class="left-controls">
+            <div class="search" role="search" aria-label="Cari buku">
+                <input id="searchInput" type="search" placeholder="Search..." aria-label="Search books by title">
+            </div>
+        </div>
+
+        <div class="controls-right">
+        <div class="category-select" id="categoryBtn" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">
+            <span id="categoryLabel">All Categories</span> <span style="opacity:0.6">▾</span>
+        </div>
+
+        <div class="category-menu" id="categoryMenu" role="menu" aria-label="Pilih kategori">
+            <!-- items -->
+            <div class="category-item selected" data-cat="" role="menuitem" tabindex="0">All Categories <span class="count" style="opacity:.6">(<span id="countAll">0</span>)</span></div>
+            <div class="category-item" data-cat="Dasar" role="menuitem" tabindex="0">Dasar <span class="count" style="opacity:.6">(<span data-count-for="Dasar">0</span>)</span></div>
+            <div class="category-item" data-cat="Menengah" role="menuitem" tabindex="0">Menengah <span class="count" style="opacity:.6">(<span data-count-for="Menengah">0</span>)</span></div>
+            <div class="category-item" data-cat="Lanjut" role="menuitem" tabindex="0">Lanjut <span class="count" style="opacity:.6">(<span data-count-for="Lanjut">0</span>)</span></div>
+            <div class="category-item" data-cat="Proyek Sains" role="menuitem" tabindex="0">Proyek Sains <span class="count" style="opacity:.6">(<span data-count-for="Proyek Sains">0</span>)</span></div>
+
+            <div class="category-actions">
+            <button class="clear-btn" id="clearCat">Clear</button>
+            <button class="apply-btn" id="applyCat">Apply</button>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <main>
+        <section class="books-grid" id="booksGrid">
+            <article class="book-card" data-title="Warren Buffett" data-category="Dasar,Menengah" data-status="Aktif">
+                <div class="book-cover">
+                <img src="./media/book-cover.png" alt="Warren Buffett">
+                </div>
+                <div class="book-body">
+                <h3 class="book-title">Warren Buffett</h3>
+                <p class="book-desc">Born in Nebraska in 1930, Warren Buffett demonstrated keen business abilities at a young age. He formed Buffett Partnership.</p>
+                <div class="card-footer">
+                    <button class="btn-read">Baca Sekarang</button>
+                    <div class="status-pill aktif" title="Status: Aktif">Aktif</div>
+                </div>
+                </div>
+            </article>
+
+            <article class="book-card" data-title="True experiment" data-category="Lanjut" data-status="Coming Soon">
+                <div class="book-cover">
+                <img src="./media/book-cover.png" alt="True experiment">
+                </div>
+                <div class="book-body">
+                <h3 class="book-title">True experiment</h3>
+                <p class="book-desc">Born and raised in a Hindu merchant caste family in coastal Gujarat, India, and trained in law at the Inner Temple.</p>
+                <div class="card-footer">
+                    <button class="btn-read">Baca Sekarang</button>
+                    <div class="status-pill coming" title="Status: Coming Soon">Coming Soon</div>
+                </div>
+                </div>
+            </article>
+
+            <article class="book-card" data-title="Charlotte's Web" data-category="Dasar" data-status="Aktif">
+                <div class="book-cover">
+                <img src="./media/book-cover.png" alt="Charlotte's Web">
+                </div>
+                <div class="book-body">
+                <h3 class="book-title">Charlotte's Web</h3>
+                <p class="book-desc">Charlotte's Web is a children's novel by American author E. B. White and illustrated by Garth Williams; it was published on.</p>
+                <div class="card-footer">
+                    <button class="btn-read">Baca Sekarang</button>
+                    <div class="status-pill aktif" title="Status: Aktif">Aktif</div>
+                </div>
+                </div>
+            </article>
+
+            <article class="book-card" data-title="The Dhoni Touch" data-category="Menengah,Lanjut" data-status="Aktif">
+                <div class="book-cover">
+                <img src="./media/book-cover.png" alt="The Dhoni Touch">
+                </div>
+                <div class="book-body">
+                <h3 class="book-title">The Dhoni Touch</h3>
+                <p class="book-desc">For over a decade, Mahendra Singh Dhoni has captivated the world of cricket and over a billion Indians with his incredible ingenuity.</p>
+                <div class="card-footer">
+                    <button class="btn-read">Baca Sekarang</button>
+                    <div class="status-pill aktif" title="Status: Aktif">Aktif</div>
+                </div>
+                </div>
+            </article>
+
+            <article class="book-card" data-title="Sky Runner" data-category="Proyek Sains" data-status="Coming Soon">
+                <div class="book-cover">
+                <img src="./media/book-cover.png" alt="Sky Runner">
+                </div>
+                <div class="book-body">
+                <h3 class="book-title">Sky Runner</h3>
+                <p class="book-desc">Emelie Forsberg is a renown Sky runner recognised worldwide for her incredible strength, endurance and break neck.</p>
+                <div class="card-footer">
+                    <button class="btn-read">Baca Sekarang</button>
+                    <div class="status-pill coming" title="Status: Coming Soon">Coming Soon</div>
+                </div>
+                </div>
+            </article>
+
+            <article class="book-card" data-title="Nelson Mandela" data-category="Menengah" data-status="Aktif">
+                <div class="book-cover">
+                <img src="./media/book-cover.png" alt="Nelson Mandela">
+                </div>
+                <div class="book-body">
+                <h3 class="book-title">Nelson Mandela</h3>
+                <p class="book-desc">Nelson Rolihlahla Mandela (18 July 1918 – 5 December 2013) was a South African political leader and activist.</p>
+                <div class="card-footer">
+                    <button class="btn-read">Baca Sekarang</button>
+                    <div class="status-pill aktif" title="Status: Aktif">Aktif</div>
+                </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div id="flipbookGrid" class="flipbook-grid">
+        <!-- Flipbooks loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <div class="footer-logo">
+          <img src="./media/maskot stato.png" alt="Stato" onerror="this.innerHTML='<div style=&quot;font-size: 60px;&quot;>🦉</div>'" />
+          <div>
+            <h3>Learn with StatoKu</h3>
+            <p class="footer-tagline">Statistika Jadi Cerita</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Halaman</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/koleksi">Koleksi Flipbook</a></li>
+          <li><a href="/kuis">Kuis Interaktif</a></li>
+          <li><a href="/tentang">Tentang</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Kontak</h3>
+        <ul>
+          <li>info@statoku.com</li>
+          <li>+62 812-3456-7890</li>
+          <li style="margin-top: 1rem;">
+            <a href="#">Instagram</a> •
+            <a href="#">YouTube</a> •
+            <a href="#">TikTok</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Learn with StatoKu. Konten flipbook diperbarui secara berkala setiap bulan.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  
+</body>
+</html>

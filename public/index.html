@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn with StatoKu - Belajar Statistika Jadi Seru</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="#flip-section">Koleksi Flipbook</a></li>
+        <li><a href="#kuis-section">Kuis Interaktif</a></li>
+        <li><a href="#tentang-section">Tentang</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background">
+      <img src="./media/bg beranda full2.png" alt="">
+    </div>
+
+    <!-- Content -->
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>LEARN WITH STATOKU</h1>
+        <p>Platform pembelajaran statistika berbasis ilustrasi dan flipbook interaktif untuk membantu siswa memahami konsep secara sederhana, terarah, dan relevan.</p>
+        <div class="hero-buttons">
+          <!-- <button class="btn btn-outline" onclick="scrollToPrevious()">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            PREVIOUS
+          </button> -->
+          <button class="btn btn-outline" onclick="scrollToNext()">
+            NEXT
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mascot -->
+      <div class="hero-mascot">
+        <div class="mascot-float">
+          <img src="./media/maskot stato.png" alt="Stato Mascot"  />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flipbook Collection Section -->
+  <section id="flip-section" class="section section-flipbooks">
+    <div class="container">
+        <div class="flip-kiri">
+            <img src="./media/book.png" alt="Ilustrasi Flipbook" />
+        </div>
+        <div class="flip-kanan">
+            <div class="section-header">
+                <h2>Koleksi Flipbook Terbaru</h2>
+                <p>Jelajahi materi statistika interaktif kami yang dirancang untuk membuat belajar jadi lebih menyenangkan</p>
+            </div>
+
+            <!-- <div id="flipbookGrid" class="flipbook-grid">
+                Flipbooks will be loaded here dynamically
+            </div>  -->
+
+            <div class="text-center button-flip mt-3">
+                <a href="/koleksi" class="btn btn-primary">
+                Lihat Semua Koleksi
+                </a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Kuis -->
+  <section id="kuis-section" class="section section-kuis">
+    <div class="container">
+      <div class="notify-box">
+        <div class="section-header section-header-kuis">
+            <h2 class="h2-kuis">Kuis Interaktif</h2>
+            <p>Uji pemahaman Anda tentang statistika dengan kuis seru yang akan segera hadir!</p>
+        </div>
+
+        <div class="text-center mt-3">
+            <a href="/kuis" class="btn btn-primary">
+            Coming Soon
+            </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- tentang -->
+  <section id="tentang-section" class="section section-tentang">
+    <div class="container">
+      <div class="section-header">
+        <h2>Tentang Learn with StatoKu</h2>
+        <p>Pelajari lebih lanjut tentang misi kami dalam membuat pembelajaran statistika menjadi menyenangkan dan mudah dipahami</p>
+      </div>
+
+      <div class="text-center mt-3">
+        <a href="/tentang" class="btn btn-primary">
+          Pelajari Lebih Lanjut
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <div class="footer-logo">
+          <img src="./media/maskot stato.png" alt="Stato" onerror="this.innerHTML='<div style=&quot;font-size: 60px;&quot;>🦉</div>'" />
+          <div>
+            <h3>Learn with StatoKu</h3>
+            <p class="footer-tagline">Statistika Jadi Cerita</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Halaman</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/koleksi">Koleksi Flipbook</a></li>
+          <li><a href="/kuis">Kuis Interaktif</a></li>
+          <li><a href="/tentang">Tentang</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Kontak</h3>
+        <ul>
+          <li>info@statoku.com</li>
+          <li>+62 812-3456-7890</li>
+          <li style="margin-top: 1rem;">
+            <a href="#">Instagram</a> •
+            <a href="#">YouTube</a> •
+            <a href="#">TikTok</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Learn with StatoKu. Konten flipbook diperbarui secara berkala setiap bulan.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
